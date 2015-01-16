@@ -11,10 +11,8 @@ module.exports = ['VERSION', '$interval', '$document', function(VERSION, $interv
             headerText: '@'
         },
 
-        template: '<div data-draggable>' +
-                        '<div data-drag-target>{{headerText}}<div ng-click="close()" class="close">x</div></div>' +
-                        '<div data-dragged-along ng-transclude></div>' +
-                    '</div>',
+        template: '<div data-drag-target>{{headerText}}<div ng-click="close()" class="close">x</div></div>' +
+                    '<div ng-transclude></div>',
 
         controller: ['$scope', '$element', function($scope, $element) {
 
