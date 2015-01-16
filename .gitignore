@@ -1,0 +1,23 @@
+# Node.js
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+
+pids
+logs
+results
+.idea
+
+node_modules
+npm-debug.log
+
+src/frontend_components
+
+# tests
+/coverage/*
+

@@ -1,0 +1,63 @@
+{
+  "name": "angular-test-project",
+  "version": "0.0.1",
+  "private": true,
+  "main": "./server",
+  "dependencies": {
+    "angular": "~1.3.0",
+    "angular-ui-router": "~0.2.10",
+    "async": "0.8.0",
+    "lodash": "~2.4.1",
+    "moment": "~2.7.0"
+  },
+  "devDependencies": {
+    "browserify-shim": "^3.8.0",
+    "dustjs-linkedin": "~2.4.0",
+    "filepicker": "*",
+    "glob": "~3.2.9",
+    "grunt": "^0.4.5",
+    "grunt-autoprefixer": "^1.0.0",
+    "grunt-browserify": "^3.2.0",
+    "grunt-bump": "~0.0.16",
+    "grunt-chmod": "^1.0.3",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-imagemin": "~0.7.0",
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-contrib-less": "^0.11.4",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-copy-to": "0.0.10",
+    "grunt-dustjs-linkedin": "0.5.0",
+    "grunt-jsdoc": "^0.5.6",
+    "grunt-regex-replace": "~0.2.6",
+    "grunt-replace": "~0.7.7",
+    "grunt-todo": "^0.3.0",
+    "grunt-touch": "^0.1.0",
+    "jasmine-reporters": "^1.0.1",
+    "jit-grunt": "^0.8.0",
+    "jpegtran-bin": "~0.2.6",
+    "karma": "^0.12.25",
+    "load-grunt-tasks": "~0.4.0",
+    "lru-cache": "~2.5.0",
+    "protractor": "^1.4.0",
+    "protractor-html-screenshot-reporter": "0.0.17",
+    "remapify": "^1.3.0",
+    "supertest": "~0.15.0",
+    "time-grunt": "~0.3.1"
+  },
+  "browser": {
+    "angular": "./node_modules/angular/angular.js"
+  },
+  "browserify": {
+    "transform": ["browserify-shim"]
+  },
+  "browserify-shim": {
+    "angular": {
+        "exports": "angular"
+    },
+    "filepicker": {
+        "exports": "global:filepicker"
+    }
+  }
+}

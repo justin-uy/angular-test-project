@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Sample</title>
+        <link type="css/text" rel="stylesheet" href="static/css/root-app-desktop.css">  
+		<script type="text/javascript" src="static/js/app.js"></script>
+	</head>
+	<body class="root-app">
+        <div data-ng-controller="MainController">
+            {{message}}
+
+            <div data-dialog data-header-text="Test Dialog Header" data-before-close="beforeClose">
+                
+                <span data-rotate-random-person data-list="people"></span>
+            </div>
+
+        </div>
+	</body>
+</html>
